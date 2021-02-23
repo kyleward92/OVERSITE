@@ -1,8 +1,11 @@
 {
-  "name": "project3-starter-auth",
+  "name": "dashboard-test",
   "version": "1.0.0",
-  "description": "Project 3 starter with authentication",
+  "description": "",
   "main": "server/server.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server/server.js",
@@ -13,32 +16,35 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "availity-reactstrap-validation": "2.3.3",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "express-session": "^1.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.3.16",
+    "mongoose-type-email": "^1.1.2",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "uuid": "^8.3.2"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alperg/project3-starter-auth.git"
+    "url": "git+https://github.com/brendonstahl97/dashboard-test.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alperg/project3-starter-auth/issues"
-  },
-  "homepage": "https://github.com/alperg/project3-starter-auth#readme",
-  "devDependencies": {
-    "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
-  },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "bcrypt": "^3.0.2",
-    "bcryptjs": "^2.4.3",
-    "connect-mongo": "^2.0.1",
-    "dotenv": "^6.1.0",
-    "express": "^4.16.4",
-    "express-session": "^1.15.6",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.3.4",
-    "morgan": "^1.9.1",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0"
+    "url": "https://github.com/brendonstahl97/dashboard-test/issues"
   }
 }

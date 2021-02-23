@@ -7,4 +7,5 @@ router.post('/login', authController.auth, passport.authenticate('local'), authC
 router.post('/logout', authController.logout);
 router.post('/signup', authController.register);
 
+
 module.exports = router;

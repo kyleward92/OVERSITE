@@ -1,0 +1,11 @@
+/build
+/node_modules
+client/node_modules
+/client/node_modules
+package-lock.json
+client/build
+.vscode
+.env
+.eslintcache
+node_modules
+.DS_Store
