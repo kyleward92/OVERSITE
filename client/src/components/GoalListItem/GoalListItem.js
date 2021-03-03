@@ -1,13 +1,14 @@
 import React from 'react'
 
 export default function GoalListItem(props) {
-    const { goalName, targetType, target, completionDate } = props.goal;
+    const { goalName, unitType, goalType, target, completionDate } = props.goal;
     return (
         <tr>
             <td>{goalName}</td>
-            <td>{targetType}</td>
+            <td>{unitType}</td>
+            <td>{goalType}</td>
             <td>{target}</td>
-            <td className="text-center">{completionDate}</td>
+            <td>{completionDate}</td>
         </tr>
     )
 };

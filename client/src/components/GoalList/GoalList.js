@@ -10,9 +10,10 @@ export default function GoalList(props) {
             <thead className="text-primary">
                 <tr>
                     <th>Name</th>
-                    <th>Target Type</th>
+                    <th>Unit of Measure</th>
+                    <th>Goal Type</th>
                     <th>Target</th>
-                    <th className="text-center">Completion Date</th>
+                    <th>Completion Date</th>
                 </tr>
             </thead>
             <tbody>
